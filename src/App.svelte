@@ -28,8 +28,9 @@
 	}
 
 	.button {
-		background-color: red;
+		background-image: linear-gradient(to bottom right, #1AACF1, #5C54D6, #D340A8, #F44E5B, #FC7341);
 		color: white;
+		font-weight: 600;
 		height: 60px;
 		width: 180px;
 		border-radius: 30px;
