@@ -1,24 +1,45 @@
+<script>
+	import Community from "./Community.svelte"
+	import Distribute from "./Distribute.svelte"
+	import Collab from "./Collab.svelte"
+	import Funding from "./Funding.svelte"
+	import HIW from "./HIW.svelte"
+</script>
+
 <main>
-	<div class="seedling">🌱</div>
-	<h1>Create a DevDAO, join a DevDAO, start contributing to DAOs as a developer <a href="https://twitter.com/radicle" target="_blank">@radicle</a></h1>
+	<h1>Build your DevDAO</h1>
+	<h3>git + p2p collab + funding = <a href="https://twitter.com/radicle" target="_blank">@radicle</a></h3>
 	<form action="https://l57by8cmnip.typeform.com/to/zLsgh566" target="_blank">
 		<input class="button" type="submit" value="Create DevDAO" />
 	</form>
+	<img class="heroimage" src="assets/images/org-page.png" alt="org page" />
+	<Community />
+	<Distribute />
+	<Collab />
+	<Funding />
+	<HIW />
 </main>
 
 <style>
 	main {
 		padding: 2em;
-		height: calc(100vh - 4em);
-		background-color: black;
+		background-color:#18FF00;
+		text-align: center;
 	}
 	h1 {
 		color: white;
-		font-size: 3em;
-		font-weight: 500;
+		font-size: 4em;
+		font-weight: 700;
 	}
-	.seedling {
-		font-size: 4rem;
+	h3 {
+		color: white;
+		font-size: 2em;
+	}
+	a {
+		color: white;
+	}
+	.heroimage {
+		max-width: 100%;
 	}
 
 	.button {
@@ -34,11 +55,10 @@
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
-			height: calc(100vh - 8em);
 			padding: 4em;
 		}
 		h1 {
-                	font-size: 4em;
-        	}
+			font-size: 7em;
+		}
 	}
 </style>
