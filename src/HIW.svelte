@@ -12,15 +12,6 @@
 		background-color:#18FF00;
 		text-align: center;
 	}
-	h2 {
-		color: white;
-		font-size: 4em;
-		font-weight: 700;
-	}
-	h3 {
-		color: white;
-		font-size: 2em;
-	}
 	.card {
 		background-color: white;
 		min-height: 550px;
@@ -34,9 +25,6 @@
 		main {
 			max-width: none;
 			padding: 4em;
-		}
-		h2 {
-			font-size: 5em;
 		}
 	}
 </style>
