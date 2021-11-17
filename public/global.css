@@ -1,3 +1,13 @@
+/* FONTS */
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+/* BASIC ELEMENTS */
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -5,31 +15,36 @@ html, body {
 }
 
 body {
-	color: #333;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-font-smoothing: antialiased;
+	color: black;
+	letter-spacing: -.03em;
+	font-weight: 700;
+}
+
+p, a {
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
-	color: white;
 	font-size: 4em;
-	font-weight: 700;
+	font-weight: 900;
 }
 
 h2 {
-	color: white;
 	font-size: 3em;
-	font-weight: 700;
 }
 
 h3 {
-	color: white;
 	font-size: 2em;
 }
 
 a {
-	color: rgb(0,100,200);
 	text-decoration: none;
 }
 
@@ -37,9 +52,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-a:visited {
-	color: rgb(0,80,160);
-}
 
 label {
 	display: block;
@@ -56,33 +68,68 @@ input, button, select, textarea {
 	border-radius: 2px;
 }
 
-input:disabled {
-	color: #ccc;
+a {
+	color: black;
 }
 
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+.heroimage {
+	max-width: 100%;
 }
 
-button:disabled {
-	color: #999;
+/* ELEMENTS */
+
+#apply-button {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	text-align: center;
 }
 
-button:not(:disabled):active {
-	background-color: #ddd;
+#apply-button input {
+	color: white;
+    background: black;
+    font-weight: 700;
+    border: 0;
+    padding: 2rem;
+    border-radius: 4rem;
+	font-size: 1.5rem;
 }
 
-button:focus {
-	border-color: #666;
+main {
+	background: linear-gradient(rgba(0,255,0,1) 0%, rgba(0,255,0,0) 100%);
+	color: blue;
+	padding: 2em;
+    text-align: center;
+
 }
+
+.card {
+	background-color: white;
+	min-height: 550px;
+	border-radius: 30px;
+}
+
+.cardtitle {
+	color: lightgrey;
+}
+
+/* MEDIA QUERIES */
 
 @media (min-width: 640px) {
+	main {
+		max-width: none;
+		padding: 4em;
+	}
 	h1 {
 		font-size: 7em;
 	}
 	h2 {
 		font-size: 5em;
 	}
-}
+	.cardrow {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 30px;
+		}
+	}
