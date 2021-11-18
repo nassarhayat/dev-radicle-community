@@ -84,6 +84,7 @@ a {
 a:hover {
 	background: white;
 	border: 2px solid transparent;
+	box-shadow: 0 0.25rem 1rem black;
 }
 
 label {
@@ -119,8 +120,8 @@ a {
 #apply-button input {
 	color: white;
     background: #5555FF;
+	border: 2px solid black;
     font-weight: 700;
-    border: 0;
     padding: 2rem 2.5rem;
     border-radius: 4rem;
 	font-size: 1.5rem;
@@ -131,11 +132,12 @@ a {
 	background: white;
 	color: #4444FF;
 	cursor: pointer;
-	box-shadow: 0 1rem 5rem rgba(0,0,0,0.2);
+	box-shadow: 0 0.5rem 2rem black;
+	border-color: white;
 }
 
 #apply-button input:active {
-	opacity: .5;
+	opacity: .9;
 }
 
 main {
