@@ -6,7 +6,27 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+@font-face {
+	font-family: "Inter";
+	src: url("https://rsms.me/inter/inter.css");
+}
+  
+@font-face {
+	font-family: "Druk X";
+	src: url("/assets/fonts/Druk-XCondSuper.otf");
+}
+
 /* BASIC ELEMENTS */
+
+::-moz-selection {
+	background: yellow;
+	color: #000;
+}
+
+::selection {
+	background: yellow;
+	color: #000;
+}
 
 html, body {
 	position: relative;
@@ -23,8 +43,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing: antialiased;
 	color: black;
-	letter-spacing: -.03em;
 	font-weight: 900;
+	cursor: default;
 }
 
 p, a {
@@ -32,7 +52,11 @@ p, a {
 }
 
 h1 {
+	font-family: "Druk X";
 	font-size: 4em;
+	letter-spacing: 0;
+	font-size: 25vw;
+	line-height: 0;
 }
 
 h2 {
@@ -40,7 +64,12 @@ h2 {
 }
 
 h3 {
+	font-weight: 400;
 	font-size: 2em;
+}
+
+h4 {
+	font-size: 1em;
 }
 
 a {
@@ -76,7 +105,7 @@ a {
 	border-radius: 1rem;
 }
 
-/* ELEMENTS */
+/* SPECIFIC ELEMENTS */
 
 #apply-button {
 	position: fixed;
@@ -114,6 +143,10 @@ main {
     text-align: center;
 }
 
+main h3 {
+	margin-bottom: 5rem;
+}
+
 .card {
 	background-color: white;
 	min-height: 550px;
@@ -131,9 +164,7 @@ main {
 		max-width: none;
 		padding: 4em;
 	}
-	h1 {
-		font-size: 7em;
-	}
+	
 	h2 {
 		font-size: 5em;
 	}

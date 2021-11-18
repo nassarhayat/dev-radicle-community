@@ -9,7 +9,7 @@
 
 <main>
   <Logo />
-  <h1>Build your DevDAO</h1>
+  <h1>Build your DevDAO.</h1>
   <h3>
     git + p2p collab + funding = <a
       href="https://twitter.com/radicle"
@@ -26,6 +26,6 @@
 
 <div id="apply-button">
   <form action="https://l57by8cmnip.typeform.com/to/zLsgh566" target="_blank">
-    <input type="submit" value="Apply to join the beta" />
+    <input type="submit" value="Apply to join the beta ->" />
   </form>
 </div>
