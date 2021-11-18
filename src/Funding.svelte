@@ -1,6 +1,6 @@
 <main>
   <h2>Support + Funding</h2>
-  <h3>funded agreements -> streamed funds</h3>
+  <h3>Turn funded agreements into streamed funds.</h3>
   <div class="cardrow">
     <div class="card">
       <h3 class="cardtitle">grant RFP + proposals</h3>

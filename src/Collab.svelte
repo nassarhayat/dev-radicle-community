@@ -1,6 +1,6 @@
 <main>
   <h2>Code Collab</h2>
-  <h3>bring your OS ecosystem together</h3>
+  <h3>Bring your OS ecosystem together.</h3>
   <div class="cardrow">
     <div class="card">
       <h3 class="cardtitle">profiles</h3>

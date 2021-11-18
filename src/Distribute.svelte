@@ -1,6 +1,6 @@
 <main>
   <h2>Code Distribution</h2>
-  <h3>decentralise operational stack</h3>
+  <h3>Decentralise your operational stack.</h3>
   <div class="cardrow">
     <div class="card">
       <h3 class="cardtitle">Org</h3>
