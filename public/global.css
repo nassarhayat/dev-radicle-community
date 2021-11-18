@@ -157,6 +157,12 @@ main h3 {
 	color: lightgrey;
 }
 
+#logos img {
+	width: 4rem;
+	border-radius: 2rem;
+	margin: 0.5rem;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 640px) {
