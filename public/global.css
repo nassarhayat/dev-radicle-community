@@ -79,14 +79,14 @@ a {
 	padding: .2rem 0.8rem 0.5rem 0.5rem;
 	border-radius: 2rem;
 	background: none;
-	border: 2px solid black;
+	border: .25rem solid black;
 	transition: all .2s ease-in-out;
 	color: black;
 }
 
 a:hover {
 	background: white;
-	border: 2px solid transparent;
+	border: .25rem solid transparent;
 	box-shadow: 0 0.25rem 1rem black;
 }
 
@@ -102,7 +102,7 @@ input, button, select, textarea {
 
 .heroimage {
 	max-width: 100%;
-	border: .5rem solid white;
+	border: .25rem solid black;
 	border-radius: 2rem;
 	box-shadow: 0 0.25rem 1rem black;
 }
@@ -120,7 +120,7 @@ input, button, select, textarea {
 #apply-button input {
 	color: white;
     background: #5555FF;
-	border: 2px solid black;
+	border: .25rem solid black;
     font-weight: 700;
     padding: 2rem 2.5rem;
     border-radius: 4rem;
