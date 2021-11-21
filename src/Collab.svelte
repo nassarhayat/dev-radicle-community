@@ -1,5 +1,5 @@
 <main>
-  <h2>Code Collab</h2>
+  <h2>Code Collaboration</h2>
   <h3>Bring your OS ecosystem together.</h3>
   <div class="cardrow">
     <div class="card">

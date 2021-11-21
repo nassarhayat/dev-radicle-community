@@ -38,7 +38,6 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	background: linear-gradient(#5555FF 0.47%, #55FFFF 16.43%, #55FF55 33.38%, #FFFF55 50.16%, #FF5555 67.03%, #FF55FF 83.63%, #5555FF 99.45%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,8 +55,9 @@ h1 {
 	font-family: "Druk X";
 	font-size: 4em;
 	letter-spacing: 0;
-	font-size: 24.5vw;
-	line-height: 0;
+	font-size: 22.5vw;
+	height: 9.5vw;
+	margin-top: 2vw;
 }
 
 h2 {
@@ -102,12 +102,30 @@ input, button, select, textarea {
 
 .heroimage {
 	max-width: 100%;
-	border: .25rem solid black;
-	border-radius: 2rem;
+	border: .3vw solid black;
+	border-radius: 2vw;
 	box-shadow: 0 0.25rem 1rem black;
 }
 
 /* SPECIFIC ELEMENTS */
+
+#wrap {
+	background: linear-gradient(
+	#5555FF 0%, 
+	#55FFFF 15%, 
+	#55FF55 30%, 
+	#FFFF55 50%, 
+	#FF5555 75%, 
+	#FF55FF 100%) 
+}
+
+#logo {
+	border: .3vw solid black;
+	border-radius: 10rem;
+	width: 96px;
+	height: 96px;
+	margin: 0 auto;
+}
 
 #apply-button {
 	position: fixed;
@@ -120,12 +138,13 @@ input, button, select, textarea {
 #apply-button input {
 	color: white;
     background: #5555FF;
-	border: .25rem solid black;
+	border: .3vw solid black;
     font-weight: 700;
-    padding: 2rem 2.5rem;
+	padding: 0rem 2.5rem;
     border-radius: 4rem;
 	font-size: 1.5rem;
 	transition: all .2s ease-in-out;
+	height: 96px;
 }
 
 #apply-button input:hover {
@@ -155,10 +174,15 @@ main h3 {
 	color: lightgrey;
 }
 
+#logos {
+	max-width: 60vw;
+	margin: auto;
+}
+
 #logos img {
-	width: 4rem;
-	border-radius: 2rem;
-	margin: 0.5rem;
+	width: 6rem;
+	border-radius: 3rem;
+	margin: 1rem;
 }
 
 /* MEDIA QUERIES */
