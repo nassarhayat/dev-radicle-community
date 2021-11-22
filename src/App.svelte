@@ -30,6 +30,6 @@
 
 <div id="apply-button">
   <form action="https://l57by8cmnip.typeform.com/to/zLsgh566" target="_blank">
-    <input type="submit" value="Apply to join the beta ->" />
+    <input type="submit" value="Apply to join the beta →" />
   </form>
 </div>

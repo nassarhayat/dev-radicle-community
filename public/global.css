@@ -1,3 +1,10 @@
+/* VARIABLES */
+
+:root {
+	--border-size: .23vw;
+	--box-shadow: 0 0.25vw 1vw black;
+}
+
 /* FONTS */
 
 @import url('https://rsms.me/inter/inter.css');
@@ -67,7 +74,7 @@ h2 {
 
 h3 {
 	font-weight: 400;
-	font-size: 4vw;
+	font-size: 3vw;
 }
 
 h4 {
@@ -76,18 +83,18 @@ h4 {
 
 a {
 	text-decoration: none;
-	padding: 0.1vw 1.8vw 1vw 1.2vw;
+	padding: 0.1vw 1.4vw 0.6vw 0.9vw;
 	border-radius: 4vw;
 	background: none;
-	border: .3vw solid black;
+	border: var(--border-size) solid black;
 	transition: all .2s ease-in-out;
 	color: black;
 }
 
 a:hover {
 	background: white;
-	border: .25rem solid transparent;
-	box-shadow: 0 0.25rem 1rem black;
+	border: var(--border-size) solid transparent;
+	box-shadow: var(--box-shadow);
 }
 
 label {
@@ -102,9 +109,9 @@ input, button, select, textarea {
 
 .heroimage {
 	max-width: 100%;
-	border: .3vw solid black;
+	border: var(--border-size) solid black;
 	border-radius: 2vw;
-	box-shadow: 0 0.25rem 1rem black;
+	box-shadow: var(--box-shadow);
 }
 
 /* SPECIFIC ELEMENTS */
@@ -120,7 +127,7 @@ input, button, select, textarea {
 }
 
 #logo {
-	border: .3vw solid black;
+	border: var(--border-size) solid black;
 	border-radius: 10rem;
 	width: 96px;
 	height: 96px;
@@ -138,7 +145,7 @@ input, button, select, textarea {
 #apply-button input {
 	color: white;
     background: #5555FF;
-	border: .3vw solid black;
+	border: var(--border-size) solid black;
     font-weight: 700;
 	padding: 0rem 2.5rem;
     border-radius: 4rem;
@@ -149,9 +156,9 @@ input, button, select, textarea {
 
 #apply-button input:hover {
 	background: white;
-	color: #4444FF;
+	color: black;
 	cursor: pointer;
-	box-shadow: 0 0.5rem 2rem black;
+	box-shadow: var(--box-shadow);
 	border-color: white;
 }
 
