@@ -87,22 +87,14 @@ a {
 	text-decoration: none;
 	padding: 0.1vw 1.4vw 0.6vw 0.9vw;
 	border-radius: 4vw;
-	background: magenta;
-	/* border: var(--border-size) solid black; */
+	background: none;
+	border: var(--border-size) solid black;
 	transition: all .2s ease-in-out;
-	color: white;
-	box-shadow: 
-	0px -6px 10px #360036 inset,
-    -5px 10px 20px pink inset,
-	0px -6px 20px darkmagenta inset,
-    10px -6px 20px darkmagenta inset,
-    -20px 30px 30px rgba(0,0,0,0.5);
+	color: black;
 }
 
 a:hover {
 	background: white;
-	border: var(--border-size) solid transparent;
-	box-shadow: var(--box-shadow);
 }
 
 label {
@@ -119,7 +111,6 @@ input, button, select, textarea {
 	max-width: 100%;
 	border: var(--border-size) solid black;
 	border-radius: var(--border-radius);
-	box-shadow: var(--box-shadow);
 }
 
 /* SPECIFIC ELEMENTS */
@@ -135,18 +126,16 @@ input, button, select, textarea {
 }
 
 #logo {
-	/* border: var(--border-size) solid black; */
+	border: var(--border-size) solid black;
 	border-radius: 10rem;
-	width: 96px;
-	height: 96px;
+	width: 10vw;
+	height: 10vw;
 	margin: 0 auto;
-	background: green;
-	box-shadow: 
-	0px -6px 10px #002600 inset,
-    -5px 10px 20px greenyellow inset,
-	0px -6px 20px darkgreen inset,
-    10px -6px 20px darkgreen inset,
-    -20px 30px 30px rgba(0,0,0,0.5);
+}
+
+#logo svg {
+	width: 100%;
+	height: 100%;
 }
 
 #apply-button {
@@ -154,7 +143,7 @@ input, button, select, textarea {
 	width: 100%;
 	bottom: 0;
 	text-align: center;
-	padding-bottom: 2rem;
+	padding-bottom: 2vw;
 }
 
 #apply-button input {
@@ -163,11 +152,12 @@ input, button, select, textarea {
 	/* border: var(--border-size) solid black; */
 	border:none;
     font-weight: 700;
-	padding: 0 2.5rem 0.4rem;
+	padding: 0 2.5vw 0.4vw;
     border-radius: 4rem;
-	font-size: 1.5rem;
+	font-size: calc(10px + 1.25vw);;
 	transition: all .2s ease-in-out;
-	height: 96px;
+	height: 10vw;
+	max-height: 96px;
 	box-shadow: 
 	0px -6px 10px #000049 inset,
     -5px 10px 20px #55FFFF inset,
@@ -175,6 +165,12 @@ input, button, select, textarea {
     10px -6px 20px darkblue inset,
     -20px 30px 30px rgba(0,0,0,0.5);
 	text-shadow: 0 -1px 1px #000049;
+}
+
+#apply-button::after {
+	display: block;
+	background: white;
+	width: 100%;
 }
 
 #apply-button input:hover {
