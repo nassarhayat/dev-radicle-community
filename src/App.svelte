@@ -14,7 +14,7 @@
     </div>
     <h1>Build your DevDAO.</h1>
     <h3>
-      git + p2p collab + funding = <a
+      p2p code collab + funding + DAOs = <a
         href="https://twitter.com/radicle"
         target="_blank">@radicle</a
       >
