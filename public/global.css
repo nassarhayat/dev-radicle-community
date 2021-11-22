@@ -184,6 +184,17 @@ input, button, select, textarea {
     -20px 30px 30px rgba(0,0,0,0.5);
 }
 
+#apply-button input:active {
+	cursor: pointer;
+	background: #556FFF;
+	box-shadow: 
+	0px -6px 5px #000049 inset,
+    -5px 10px 10px #55FFFF inset,
+	0px -6px 10px darkblue inset,
+    10px -6px 10px darkblue inset,
+    -10px 20px 20px rgba(0,0,0,0.5);
+}
+
 main {
 	padding: 2em;
     text-align: center;
@@ -239,6 +250,10 @@ main h3 {
 
 .patches-screenshot {
 	background-image: url(/assets/images/ui/patches.png);
+}
+
+.githubgitlab-screenshot {
+	background-image: url(/assets/images/ui/githubgitlab.png);
 }
 
 /* MEDIA QUERIES */
