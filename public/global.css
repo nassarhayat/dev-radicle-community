@@ -3,6 +3,7 @@
 :root {
 	--border-size: .23vw;
 	--box-shadow: 0 0.25vw 1vw black;
+	--border-radius: 2vw;
 }
 
 /* FONTS */
@@ -52,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: black;
 	font-weight: 900;
 	cursor: default;
+	margin: 0;
 }
 
 p, a {
@@ -63,8 +65,8 @@ h1 {
 	font-size: 4em;
 	letter-spacing: 0;
 	font-size: 22.5vw;
-	height: 9.5vw;
 	margin-top: 2vw;
+	line-height: 24vw;
 }
 
 h2 {
@@ -110,7 +112,7 @@ input, button, select, textarea {
 .heroimage {
 	max-width: 100%;
 	border: var(--border-size) solid black;
-	border-radius: 2vw;
+	border-radius: var(--border-radius);
 	box-shadow: var(--box-shadow);
 }
 
@@ -174,11 +176,20 @@ main h3 {
 .card {
 	background-color: white;
 	min-height: 550px;
-	border-radius: 30px;
+	border-radius: var(--border-radius);
+	background-size: cover;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .cardtitle {
-	color: lightgrey;
+	color: black;
+	background: linear-gradient(180deg, rgba(24, 255, 0, 0) 0%, rgba(24, 255, 0, 0.0086472) 6.67%, rgba(24, 255, 0, 0.03551) 13.33%, rgba(24, 255, 0, 0.0816599) 20%, rgba(24, 255, 0, 0.147411) 26.67%, rgba(24, 255, 0, 0.231775) 33.33%, rgba(24, 255, 0, 0.331884) 40%, rgba(24, 255, 0, 0.442691) 46.67%, rgba(24, 255, 0, 0.557309) 53.33%, rgba(24, 255, 0, 0.668116) 60%, rgba(24, 255, 0, 0.768225) 66.67%, rgba(24, 255, 0, 0.852589) 73.33%, rgba(24, 255, 0, 0.91834) 80%, rgba(24, 255, 0, 0.96449) 86.67%, rgba(24, 255, 0, 0.991353) 93.33%, #18FF00 100%);	;
+	height: 12rem;
+	border-radius: var(--border-radius);
+	display: flex;
+	flex-direction: column-reverse;
+	padding-bottom: 2rem;
 }
 
 #logos {
@@ -190,6 +201,12 @@ main h3 {
 	width: 6rem;
 	border-radius: 3rem;
 	margin: 1rem;
+}
+
+/* CARD IMAGES */
+
+.org-screenshot {
+	background-image: url(/assets/images/ui/org.png);
 }
 
 /* MEDIA QUERIES */
