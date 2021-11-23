@@ -3,7 +3,7 @@
 :root {
 	--border-size: .23vw;
 	--box-shadow: 0 0.25vw 1vw black;
-	--border-radius: 2vw;
+	--border-radius: 3vw;
 }
 
 /* FONTS */
@@ -80,7 +80,7 @@ h3 {
 }
 
 h4 {
-	font-size: 2vw;
+	font-size: calc(10px + 1vw);
 }
 
 a {
@@ -122,7 +122,8 @@ input, button, select, textarea {
 	#55FF55 30%, 
 	#FFFF55 50%, 
 	#FF5555 75%, 
-	#FF55FF 100%) 
+	#FF55FF 100%);
+	padding-bottom: 10vw;
 }
 
 #logo {
@@ -154,7 +155,7 @@ input, button, select, textarea {
     font-weight: 700;
 	padding: 0 2.5vw 0.4vw;
     border-radius: 4rem;
-	font-size: calc(10px + 1.25vw);;
+	font-size: calc(10px + 1.25vw);
 	transition: all .2s ease-in-out;
 	height: 10vw;
 	max-height: 96px;
@@ -206,7 +207,7 @@ main h3 {
 
 .card {
 	background-color: white;
-	min-height: 40vw;
+	height: 40vw;
 	border-radius: var(--border-radius);
 	background-size: cover;
 	display: flex;
@@ -216,11 +217,11 @@ main h3 {
 .cardtitle {
 	color: black;
 	background: linear-gradient(180deg, rgba(24, 255, 0, 0) 0%, rgba(24, 255, 0, 0.0086472) 6.67%, rgba(24, 255, 0, 0.03551) 13.33%, rgba(24, 255, 0, 0.0816599) 20%, rgba(24, 255, 0, 0.147411) 26.67%, rgba(24, 255, 0, 0.231775) 33.33%, rgba(24, 255, 0, 0.331884) 40%, rgba(24, 255, 0, 0.442691) 46.67%, rgba(24, 255, 0, 0.557309) 53.33%, rgba(24, 255, 0, 0.668116) 60%, rgba(24, 255, 0, 0.768225) 66.67%, rgba(24, 255, 0, 0.852589) 73.33%, rgba(24, 255, 0, 0.91834) 80%, rgba(24, 255, 0, 0.96449) 86.67%, rgba(24, 255, 0, 0.991353) 93.33%, #18FF00 100%);	;
-	height: 12rem;
+	height: 12vw;
 	border-radius: var(--border-radius);
 	display: flex;
 	flex-direction: column-reverse;
-	padding: 0 1rem 2rem;
+	padding: 0 1rem 2vw;
 }
 
 #logos {
@@ -254,7 +255,7 @@ main h3 {
 
 .githubgitlab-screenshot {
 	background-image: url(/assets/images/ui/githubgitlab.png);
-	background-position: center;
+	background-position: center top;
 }
 
 .issues-screenshot {
@@ -279,3 +280,12 @@ main h3 {
 		gap: 30px;
 		}
 	}
+
+@media screen and (max-width: 640px) {
+	.card {
+		height: 90vw;
+		max-width: 80vw;
+		margin: 8vw auto;
+		border-radius: ;
+	}
+}
