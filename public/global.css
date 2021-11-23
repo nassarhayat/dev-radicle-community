@@ -261,6 +261,10 @@ main h3 {
 	background-image: url(/assets/images/ui/issues.png);
 }
 
+.patches-screenshot {
+	background-image: url(/assets/images/ui/patches.png);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 640px) {
