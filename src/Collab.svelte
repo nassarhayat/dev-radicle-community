@@ -5,7 +5,7 @@
     <div class="card profiles-screenshot">
       <h4 class="cardtitle">profiles</h4>
     </div>
-    <div class="card">
+    <div class="card issues-screenshot">
       <h4 class="cardtitle">Issues</h4>
     </div>
     <div class="card">

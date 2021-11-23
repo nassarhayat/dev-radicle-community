@@ -206,7 +206,7 @@ main h3 {
 
 .card {
 	background-color: white;
-	min-height: 550px;
+	min-height: 40vw;
 	border-radius: var(--border-radius);
 	background-size: cover;
 	display: flex;
@@ -220,7 +220,7 @@ main h3 {
 	border-radius: var(--border-radius);
 	display: flex;
 	flex-direction: column-reverse;
-	padding-bottom: 2rem;
+	padding: 0 1rem 2rem;
 }
 
 #logos {
@@ -254,6 +254,11 @@ main h3 {
 
 .githubgitlab-screenshot {
 	background-image: url(/assets/images/ui/githubgitlab.png);
+	background-position: center;
+}
+
+.issues-screenshot {
+	background-image: url(/assets/images/ui/issues.png);
 }
 
 /* MEDIA QUERIES */
