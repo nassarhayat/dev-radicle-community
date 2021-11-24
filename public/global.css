@@ -50,8 +50,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing: antialiased;
-	color: black;
-	font-weight: 900;
+	font-weight: 800;
 	cursor: default;
 	margin: 0;
 }
@@ -67,6 +66,7 @@ h1 {
 	font-size: 22.5vw;
 	margin-top: 2vw;
 	line-height: 24vw;
+	font-weight: inherit;
 }
 
 h2 {
@@ -123,7 +123,7 @@ input, button, select, textarea {
 	#FFFF55 50%, 
 	#FF5555 75%, 
 	#FF55FF 100%);
-	padding-bottom: 10vw;
+	padding-bottom: 7vw;
 }
 
 #logo {
@@ -144,7 +144,7 @@ input, button, select, textarea {
 	width: 100%;
 	bottom: 0;
 	text-align: center;
-	padding-bottom: 2vw;
+	padding-bottom: 3vw;
 }
 
 #apply-button input {
@@ -157,7 +157,7 @@ input, button, select, textarea {
     border-radius: 4rem;
 	font-size: calc(10px + 1.25vw);
 	transition: all .2s ease-in-out;
-	height: 10vw;
+	height: 8vw;
 	max-height: 96px;
 	box-shadow: 
 	0px -6px 10px #000049 inset,
@@ -186,6 +186,7 @@ input, button, select, textarea {
 }
 
 #apply-button input:active {
+	transition: none;
 	cursor: pointer;
 	background: #556FFF;
 	box-shadow: 
@@ -206,22 +207,23 @@ main h3 {
 }
 
 .card {
-	background-color: white;
 	height: 40vw;
 	border-radius: var(--border-radius);
 	background-size: cover;
 	display: flex;
-	flex-direction: column-reverse;
 }
 
-.cardtitle {
-	color: black;
-	background: linear-gradient(180deg, rgba(24, 255, 0, 0) 0%, rgba(24, 255, 0, 0.0086472) 6.67%, rgba(24, 255, 0, 0.03551) 13.33%, rgba(24, 255, 0, 0.0816599) 20%, rgba(24, 255, 0, 0.147411) 26.67%, rgba(24, 255, 0, 0.231775) 33.33%, rgba(24, 255, 0, 0.331884) 40%, rgba(24, 255, 0, 0.442691) 46.67%, rgba(24, 255, 0, 0.557309) 53.33%, rgba(24, 255, 0, 0.668116) 60%, rgba(24, 255, 0, 0.768225) 66.67%, rgba(24, 255, 0, 0.852589) 73.33%, rgba(24, 255, 0, 0.91834) 80%, rgba(24, 255, 0, 0.96449) 86.67%, rgba(24, 255, 0, 0.991353) 93.33%, #18FF00 100%);	;
-	height: 12vw;
-	border-radius: var(--border-radius);
-	display: flex;
-	flex-direction: column-reverse;
-	padding: 0 1rem 2vw;
+.card .text {
+background: linear-gradient(180deg, rgba(14, 23, 31, 0) 0%, rgba(14, 23, 31, 0.0086472) 6.67%, rgba(14, 23, 31, 0.03551) 13.33%, rgba(14, 23, 31, 0.0816599) 20%, rgba(14, 23, 31, 0.147411) 26.67%, rgba(14, 23, 31, 0.231775) 33.33%, rgba(14, 23, 31, 0.331884) 40%, rgba(14, 23, 31, 0.442691) 46.67%, rgba(14, 23, 31, 0.557309) 53.33%, rgba(14, 23, 31, 0.668116) 60%, rgba(14, 23, 31, 0.768225) 66.67%, rgba(14, 23, 31, 0.852589) 73.33%, rgba(14, 23, 31, 0.91834) 80%, rgba(14, 23, 31, 0.96449) 86.67%, rgba(14, 23, 31, 0.991353) 93.33%, #0E171F 100%);
+padding: 0 5% 2vw;
+color: white;
+height: 50%;
+border-radius: var(--border-radius);
+width: 90%;
+align-self: flex-end;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
 }
 
 #logos {
@@ -264,6 +266,10 @@ main h3 {
 
 .patches-screenshot {
 	background-image: url(/assets/images/ui/patches.png);
+}
+
+.fundedissues-screenshot {
+	background-image: url(/assets/images/ui/fundedissues.png);
 }
 
 /* MEDIA QUERIES */

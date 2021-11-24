@@ -3,13 +3,22 @@
   <h3>Turn funded agreements into streamed funds.</h3>
   <div class="cardrow">
     <div class="card">
-      <h4 class="cardtitle">grant RFP + proposals</h4>
+      <div class="text">
+        <h4 class="cardtitle">Grant RFP & proposals</h4>
+        <p>Grant requests for proposals and proposals.</p>
+      </div>
     </div>
-    <div class="card">
-      <h4 class="cardtitle">funded contributor</h4>
+    <div class="card fundedcontributor-screenshot">
+      <div class="text">
+        <h4 class="cardtitle">Funded contributors</h4>
+        <p>Pay your contributors.</p>
+      </div>
     </div>
-    <div class="card">
-      <h4 class="cardtitle">funded issues</h4>
+    <div class="card fundedissues-screenshot">
+      <div class="text">
+        <h4 class="cardtitle">Funded issues</h4>
+        <p>Offer money to fix issues.</p>
+      </div>
     </div>
   </div>
 </main>
