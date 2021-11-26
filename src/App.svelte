@@ -19,7 +19,7 @@
         target="_blank">@radicle</a
       >
     </h3>
-    <img class="heroimage" src="assets/images/ui/org-page.png" alt="org page" />
+    <img class="heroimage" src="assets/images/ui/org-page.jpg" alt="org page" />
   </main>
   <Community />
   <Distribute />
