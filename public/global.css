@@ -3,7 +3,7 @@
 :root {
 	--border-size: .23vw;
 	--box-shadow: 0 0.25vw 1vw black;
-	--border-radius: 3vw;
+	--border-radius: 2vw;
 }
 
 /* FONTS */
@@ -272,6 +272,14 @@ justify-content: flex-end;
 	background-image: url(/assets/images/ui/fundedissues.png);
 }
 
+.howitworks-screenshot {
+	background-image: url(/assets/images/ui/howitworks.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 31.5vw;
+	border-radius: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 640px) {
@@ -293,5 +301,15 @@ justify-content: flex-end;
 		max-width: 80vw;
 		margin: 8vw auto;
 		border-radius: ;
+	}
+
+	#logos img {
+		width: 5rem;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 3vw;
+		margin-top: 3vw;
 	}
 }
