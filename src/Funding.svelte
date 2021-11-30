@@ -2,13 +2,13 @@
   <h2>Support & Funding</h2>
   <h3>Turn funded agreements into streamed funds.</h3>
   <div class="cardrow">
-    <div class="card">
+    <div class="card grantforproposal-screenshot">
       <div class="text">
         <h4 class="cardtitle">Grant RFP & proposals</h4>
         <p>Grant requests for proposals and proposals.</p>
       </div>
     </div>
-    <div class="card fundedcontributor-screenshot">
+    <div class="card fundedcontributors-screenshot">
       <div class="text">
         <h4 class="cardtitle">Funded contributors</h4>
         <p>Pay your contributors.</p>

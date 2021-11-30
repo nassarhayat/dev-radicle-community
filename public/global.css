@@ -280,6 +280,14 @@ justify-content: flex-end;
 	border-radius: 0;
 }
 
+.fundedcontributors-screenshot {
+	background-image: url(/assets/images/ui/fundedcontributors.png);
+}
+
+.grantforproposal-screenshot {
+	background-image: url(/assets/images/ui/grantforproposal.png);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 640px) {
