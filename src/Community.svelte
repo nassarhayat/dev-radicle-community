@@ -1,40 +1,21 @@
 <main>
-	<h2>Fast growing community</h2>
-	<h3>join top DevDAOs</h3>
-	<div class="cardrow">
-		<div class="card">
-			<h3 class="cardtitle">Ecosystems</h3>
-		</div>
-		<div class="card">
-			<h3 class="cardtitle">DevDAOs</h3>
-		</div>
-	</div>
+  <h2>Fast growing community</h2>
+  <h3>Join top DevDAOs.</h3>
+  <div id="logos">
+    <img src="/assets/images/logos/akash.png" alt="akash logo" />
+    <img src="/assets/images/logos/ceramic.png" alt="ceramic logo" />
+    <img src="/assets/images/logos/dxdao.png" alt="dxdao logo" />
+    <img src="/assets/images/logos/gnosis.png" alt="gnosis logo" />
+    <img src="/assets/images/logos/makerdao.png" alt="makerdao logo" />
+    <img src="/assets/images/logos/polygon.png" alt="polygon logo" />
+    <img src="/assets/images/logos/snapshot.png" alt="snapshot logo" />
+    <img src="/assets/images/logos/synthetix.png" alt="synthetix logo" />
+    <img src="/assets/images/logos/textile.png" alt="textile logo" />
+    <img src="/assets/images/logos/thegraph.png" alt="the graph logo" />
+    <img src="/assets/images/logos/uma.png" alt="uma logo" />
+    <img
+      src="/assets/images/logos/walletconnect.png"
+      alt="walletconnect logo"
+    />
+  </div>
 </main>
-
-<style>
-	main {
-		padding: 2em;
-		background-color:#18FF00;
-		text-align: center;
-	}
-	.card {
-		background-color: white;
-		min-height: 550px;
-		border-radius: 30px;
-	}
-	.cardtitle {
-		color: #E5E5E5;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-			padding: 4em;
-		}
-		.cardrow {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 30px;
-		}
-	}
-</style>

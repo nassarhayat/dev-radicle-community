@@ -1,3 +1,41 @@
+/* VARIABLES */
+
+:root {
+	--border-size: .23vw;
+	--box-shadow: 0 0.25vw 1vw black;
+	--border-radius: 2vw;
+}
+
+/* FONTS */
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("https://rsms.me/inter/inter.css");
+}
+  
+@font-face {
+	font-family: "Druk X";
+	src: url("/assets/fonts/Druk-XCondSuper.otf");
+}
+
+/* BASIC ELEMENTS */
+
+::-moz-selection {
+	background: yellow;
+	color: #000;
+}
+
+::selection {
+	background: yellow;
+	color: #000;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -5,40 +43,58 @@ html, body {
 }
 
 body {
-	color: #333;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 800;
+	cursor: default;
+	margin: 0;
+}
+
+p, a {
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
-	color: white;
+	font-family: "Druk X";
 	font-size: 4em;
-	font-weight: 700;
+	letter-spacing: 0;
+	font-size: 22.5vw;
+	margin-top: 2vw;
+	line-height: 24vw;
+	font-weight: inherit;
 }
 
 h2 {
-	color: white;
-	font-size: 3em;
-	font-weight: 700;
+	font-size: 6vw;
+	line-height: 9vw;
 }
 
 h3 {
-	color: white;
-	font-size: 2em;
+	font-weight: 400;
+	font-size: 3vw;
+}
+
+h4 {
+	font-size: calc(10px + 1vw);
 }
 
 a {
-	color: rgb(0,100,200);
 	text-decoration: none;
+	padding: 0.1vw 1.4vw 0.6vw 0.9vw;
+	border-radius: 4vw;
+	background: none;
+	border: var(--border-size) solid black;
+	transition: all .2s ease-in-out;
+	color: black;
 }
 
 a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
+	background: white;
 }
 
 label {
@@ -48,41 +104,220 @@ label {
 input, button, select, textarea {
 	font-family: inherit;
 	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
 }
 
-input:disabled {
-	color: #ccc;
+.heroimage {
+	max-width: 100%;
+	border: var(--border-size) solid black;
+	border-radius: var(--border-radius);
 }
 
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+/* SPECIFIC ELEMENTS */
+
+#wrap {
+	background: linear-gradient(
+	#5555FF 0%, 
+	#55FFFF 15%, 
+	#55FF55 30%, 
+	#FFFF55 50%, 
+	#FF5555 75%, 
+	#FF55FF 100%);
+	padding-bottom: 7vw;
 }
 
-button:disabled {
-	color: #999;
+#logo {
+	border: var(--border-size) solid black;
+	border-radius: 10rem;
+	width: 10vw;
+	height: 10vw;
+	margin: 0 auto;
 }
 
-button:not(:disabled):active {
-	background-color: #ddd;
+#logo svg {
+	width: 100%;
+	height: 100%;
 }
 
-button:focus {
-	border-color: #666;
+#apply-button {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	padding-bottom: 3vw;
 }
+
+#apply-button input {
+	color: white;
+    background: #5555FF;
+	/* border: var(--border-size) solid black; */
+	border:none;
+    font-weight: 700;
+	padding: 0 2.5vw 0.4vw;
+    border-radius: 4rem;
+	font-size: calc(10px + 1.25vw);
+	transition: all .2s ease-in-out;
+	height: 8vw;
+	max-height: 96px;
+	box-shadow: 
+	0px -6px 10px #000049 inset,
+    -5px 10px 20px #55FFFF inset,
+	0px -6px 20px darkblue inset,
+    10px -6px 20px darkblue inset,
+    -20px 30px 30px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px #000049;
+}
+
+#apply-button::after {
+	display: block;
+	background: white;
+	width: 100%;
+}
+
+#apply-button input:hover {
+	cursor: pointer;
+	background: #556FFF;
+	box-shadow: 
+	0px -6px 10px #000049 inset,
+    -5px 15px 20px #55FFFF inset,
+	0px -6px 20px darkblue inset,
+    10px -6px 20px darkblue inset,
+    -20px 30px 30px rgba(0,0,0,0.5);
+}
+
+#apply-button input:active {
+	transition: none;
+	cursor: pointer;
+	background: #556FFF;
+	box-shadow: 
+	0px -6px 5px #000049 inset,
+    -5px 10px 10px #55FFFF inset,
+	0px -6px 10px darkblue inset,
+    10px -6px 10px darkblue inset,
+    -10px 20px 20px rgba(0,0,0,0.5);
+}
+
+main {
+	padding: 2em;
+    text-align: center;
+}
+
+main h3 {
+	margin-bottom: 5rem;
+}
+
+.card {
+	height: 40vw;
+	border-radius: var(--border-radius);
+	background-size: cover;
+	display: flex;
+}
+
+.card .text {
+background: linear-gradient(180deg, rgba(14, 23, 31, 0) 0%, rgba(14, 23, 31, 0.0086472) 6.67%, rgba(14, 23, 31, 0.03551) 13.33%, rgba(14, 23, 31, 0.0816599) 20%, rgba(14, 23, 31, 0.147411) 26.67%, rgba(14, 23, 31, 0.231775) 33.33%, rgba(14, 23, 31, 0.331884) 40%, rgba(14, 23, 31, 0.442691) 46.67%, rgba(14, 23, 31, 0.557309) 53.33%, rgba(14, 23, 31, 0.668116) 60%, rgba(14, 23, 31, 0.768225) 66.67%, rgba(14, 23, 31, 0.852589) 73.33%, rgba(14, 23, 31, 0.91834) 80%, rgba(14, 23, 31, 0.96449) 86.67%, rgba(14, 23, 31, 0.991353) 93.33%, #0E171F 100%);
+padding: 0 5% 2vw;
+color: white;
+height: 50%;
+border-radius: var(--border-radius);
+width: 90%;
+align-self: flex-end;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+#logos {
+	max-width: 60vw;
+	margin: auto;
+}
+
+#logos img {
+	width: 6rem;
+	border-radius: 3rem;
+	margin: 1rem;
+}
+
+/* CARD IMAGES */
+
+.org-screenshot {
+	background-image: url(/assets/images/ui/org.png);
+}
+
+.profiles-screenshot {
+	background-image: url(/assets/images/ui/profile.png);
+}
+
+.pullpush-screenshot {
+	background-image: url(/assets/images/ui/pullpush.png);
+}
+
+.patches-screenshot {
+	background-image: url(/assets/images/ui/patches.png);
+}
+
+.githubgitlab-screenshot {
+	background-image: url(/assets/images/ui/githubgitlab.png);
+	background-position: center top;
+}
+
+.issues-screenshot {
+	background-image: url(/assets/images/ui/issues.png);
+}
+
+.patches-screenshot {
+	background-image: url(/assets/images/ui/patches.png);
+}
+
+.fundedissues-screenshot {
+	background-image: url(/assets/images/ui/fundedissues.png);
+}
+
+.howitworks-screenshot {
+	background-image: url(/assets/images/ui/howitworks.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 31.5vw;
+	border-radius: 0;
+}
+
+.fundedcontributors-screenshot {
+	background-image: url(/assets/images/ui/fundedcontributors.png);
+}
+
+.grantforproposal-screenshot {
+	background-image: url(/assets/images/ui/grantforproposal.png);
+}
+
+/* MEDIA QUERIES */
 
 @media (min-width: 640px) {
-	h1 {
-		font-size: 7em;
+	main {
+		max-width: none;
+		padding: 4em;
 	}
-	h2 {
-		font-size: 5em;
+	
+	.cardrow {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 30px;
+		}
+	}
+
+@media screen and (max-width: 640px) {
+	.card {
+		height: 90vw;
+		max-width: 80vw;
+		margin: 8vw auto;
+		border-radius: ;
+	}
+
+	#logos img {
+		width: 5rem;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 3vw;
+		margin-top: 3vw;
 	}
 }

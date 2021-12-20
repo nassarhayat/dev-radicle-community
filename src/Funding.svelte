@@ -1,43 +1,24 @@
 <main>
-	<h2>Support + Funding</h2>
-	<h3>funded agreements -> streamed funds</h3>
-	<div class="cardrow">
-		<div class="card">
-			<h3 class="cardtitle">grant RFP + proposals</h3>
-		</div>
-		<div class="card">
-			<h3 class="cardtitle">funded contributor</h3>
-		</div>
-		<div class="card">
-			<h3 class="cardtitle">funded issues</h3>
-		</div>
-	</div>
+  <h2>Support & Funding</h2>
+  <h3>Turn funded agreements into streamed funds.</h3>
+  <div class="cardrow">
+    <div class="card grantforproposal-screenshot">
+      <div class="text">
+        <h4 class="cardtitle">Grant RFP & proposals</h4>
+        <p>Grant requests for proposals and proposals.</p>
+      </div>
+    </div>
+    <div class="card fundedcontributors-screenshot">
+      <div class="text">
+        <h4 class="cardtitle">Funded contributors</h4>
+        <p>Pay your contributors.</p>
+      </div>
+    </div>
+    <div class="card fundedissues-screenshot">
+      <div class="text">
+        <h4 class="cardtitle">Funded issues</h4>
+        <p>Offer money to fix issues.</p>
+      </div>
+    </div>
+  </div>
 </main>
-
-<style>
-	main {
-		padding: 2em;
-		background-color:#18FF00;
-		text-align: center;
-	}
-	.card {
-		background-color: white;
-		min-height: 550px;
-		border-radius: 30px;
-	}
-	.cardtitle {
-		color: #E5E5E5;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-			padding: 4em;
-		}
-		.cardrow {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			gap: 30px;
-		}
-	}
-</style>
